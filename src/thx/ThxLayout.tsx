@@ -37,7 +37,7 @@ export const ThxLayout = () => {
 
       <div className={appSt.bottomBtn}>
         <ButtonMobile block view="primary" href="https://online.alfabank.ru/debit_card_showcase?flowType=KIDS" onClick={submit}>
-          Перейти на главный экран
+          Оформить карту
         </ButtonMobile>
       </div>
     </>
