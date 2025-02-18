@@ -5,6 +5,12 @@ import { thxSt } from "./style.css";
 import { appSt } from "../style.css.ts";
 
 export const ThxLayout = () => {
+    const submit = () => {
+        window.gtag("event", "sub_get_4116", {
+            variant_name: "4116_5",
+        });
+    };
+
   return (
     <>
       <div className={thxSt.container}>
@@ -30,7 +36,7 @@ export const ThxLayout = () => {
       </div>
 
       <div className={appSt.bottomBtn}>
-        <ButtonMobile block view="primary" href="https://online.alfabank.ru/debit_card_showcase?flowType=KIDS">
+        <ButtonMobile block view="primary" href="https://online.alfabank.ru/debit_card_showcase?flowType=KIDS" onClick={submit}>
           Перейти на главный экран
         </ButtonMobile>
       </div>
